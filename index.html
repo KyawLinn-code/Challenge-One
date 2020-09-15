@@ -5,15 +5,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="index.css">
+    <style>
+        .test{
+            color: blueviolet;
+            text-align: center;
+        }
+        .margin{
+            margin: 3rem;
+            padding: 1rem;
+        }
+        .remove{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <div class="container" >
-        <h1 class="">Your Age in Days</h1>
+        <h1 class="" style="text-align: center;">Your Age in Days</h1>
         <div class="row" style="display: flex; justify-content: space-around; margin: 5rem;">
             <button type="button" onclick="getInDays()" class="btn btn-primary">Click me</button>
-            <button type="button" class="btn btn-danger">Reset</button>
+            <button type="button" onclick="remove()" class="btn btn-danger">Reset</button>
         </div>
-        <div class="container" id="result">
+        <div class="container center" id="result">
             
         </div>
     </div>
